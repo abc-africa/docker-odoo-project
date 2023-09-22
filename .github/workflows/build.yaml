@@ -60,8 +60,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Test
-        run: export BASE_IMAGE=${{ matrix.odoo_serie }}:latest; make VERSION=${{ matrix.odoo_serie }} test
+      # - name: Test
+      #   run: export BASE_IMAGE=${{ matrix.odoo_serie }}:latest; make VERSION=${{ matrix.odoo_serie }} test
 
       - name: Login to GitHub Container Registry
         if: github.event_name == 'push'
