@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/camptocamp/docker-odoo-project
+          images: ghcr.io/abc-africa/odoo
           flavor: |
               prefix=${{ matrix.odoo_serie }}-,onlatest=true
           tags: |
