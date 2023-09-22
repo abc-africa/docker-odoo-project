@@ -2,6 +2,7 @@ FROM --platform=linux/arm64 debian:buster
 MAINTAINER Camptocamp
 ARG UID=999
 # create the working directory and a place to set the logs (if wanted)
+# create the working directory and a place to set the logs (if wanted)
 RUN mkdir -p /odoo /var/log/odoo
 
 COPY ./base_requirements.txt /odoo
