@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: docker.io/abcafrica/odoo
+          images: abcafrica/odoo
           flavor: |
               prefix=${{ matrix.odoo_serie }}-,onlatest=true
           tags: |
