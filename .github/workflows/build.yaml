@@ -68,6 +68,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: docker.io
+          #added docker tokens
           username: ${{ secrets.GHCR_USER }}
           password: ${{ secrets.GHCR_TOKEN }}
 
